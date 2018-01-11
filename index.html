@@ -242,8 +242,12 @@
 
     <script src="jquery.stellar.min.js"></script>
     <script>
-        $.stellar();
-
+        $(function(){
+            $.stellar({
+                horizontalScrolling: false,
+                verticalOffset: 40
+            });
+        });
     </script>
     <script src="sticky-kit.js"></script>
     <script>
