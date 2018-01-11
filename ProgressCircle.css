@@ -1,0 +1,279 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: white;
+}
+
+h1 {
+  text-align: center;
+  color: #eee;
+}
+
+.skills-container {
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+
+  width: 70%;
+  margin: 0 auto;
+}
+
+.circular-progress {
+  margin: auto;
+  position: relative;
+
+}
+
+.circular-progress,
+.circular-progress:before,
+.circular-progress:after {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.circular-progress:before,
+.circular-progress:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.circular-progress:before {
+  padding: .5em;
+  line-height: 140px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.circular-progress:after {
+  font-size: .8rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 230px;
+}
+
+.html {
+  background: -webkit-linear-gradient(90deg, #F16529 50%, rgba(241, 101, 41, 0.3) 50%);
+  background: linear-gradient(0deg, #F16529 50%, rgba(241, 101, 41, 0.3) 50%);
+  -webkit-transform: rotate(170deg);
+      -ms-transform: rotate(170deg);
+          transform: rotate(170deg);
+}
+
+.html:before,
+.html:after {
+  color:rgba(24,24,24,0.5);
+}
+
+.html:before {
+  background: white content-box;
+  -webkit-transform: rotate(-170deg);
+      -ms-transform: rotate(-170deg);
+          transform: rotate(-170deg);
+  content: "90%";
+}
+
+.html:after {
+  background: -webkit-linear-gradient(transparent 50%, white 50%);
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "html";
+  -webkit-transform: rotate(-170deg) scale(1.1);
+      -ms-transform: rotate(-170deg) scale(1.1);
+          transform: rotate(-170deg) scale(1.1);
+}
+
+.css {
+  background: -webkit-linear-gradient(90deg, #008FD5 50%, rgba(0, 143, 213, 0.3) 50%);
+  background: linear-gradient(0deg, #008FD5 50%, rgba(0, 143, 213, 0.3) 50%);
+  -webkit-transform: rotate(144deg);
+      -ms-transform: rotate(144deg);
+          transform: rotate(144deg);
+}
+
+.css:before,
+.css:after {
+  color:rgba(24,24,24,0.5);
+}
+
+.css:before {
+  background: white content-box;
+  -webkit-transform: rotate(-144deg);
+      -ms-transform: rotate(-144deg);
+          transform: rotate(-144deg);
+  content: "80%";
+}
+
+.css:after {
+  background: -webkit-linear-gradient(transparent 50%, white 50%);
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "css";
+  -webkit-transform: rotate(-144deg) scale(1.1);
+      -ms-transform: rotate(-144deg) scale(1.1);
+          transform: rotate(-144deg) scale(1.1);
+}
+
+.javascript {
+  background: -webkit-linear-gradient(90deg, #FADF1C 50%, rgba(250, 223, 28, 0.3) 50%);
+  background: linear-gradient(0deg, #FADF1C 50%, rgba(250, 223, 28, 0.3) 50%);
+  -webkit-transform: rotate(120.6deg);
+      -ms-transform: rotate(120.6deg);
+          transform: rotate(120.6deg);
+}
+
+.javascript:before,
+.javascript:after {
+  color: rgba(24,24,24,0.5);
+}
+
+.javascript:before {
+  background: white content-box;
+  -webkit-transform: rotate(-120.6deg);
+      -ms-transform: rotate(-120.6deg);
+          transform: rotate(-120.6deg);
+  content: "67%";
+}
+
+.javascript:after {
+  background: -webkit-linear-gradient(transparent 50%, white 50%);
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "javascript";
+  -webkit-transform: rotate(-120.6deg) scale(1.1);
+      -ms-transform: rotate(-120.6deg) scale(1.1);
+          transform: rotate(-120.6deg) scale(1.1);
+}
+
+/*# sourceMappingURL=estilos.css.map */
+.php {
+  background: -webkit-linear-gradient(90deg, #6b7eb6 50%, rgba(107, 126, 182, 0.3) 50%);
+  background: linear-gradient(0deg, #6b7eb6 50%, rgba(107, 126, 182, 0.3) 50%);
+  -webkit-transform: rotate(108deg);
+      -ms-transform: rotate(108deg);
+          transform: rotate(108deg);
+}
+
+.php:before,
+.php:after {
+  color:rgba(24,24,24,0.5);
+}
+
+.php:before {
+  background: white content-box;
+  -webkit-transform: rotate(-108deg);
+      -ms-transform: rotate(-108deg);
+          transform: rotate(-108deg);
+  content: "60%";
+}
+
+.php:after {
+  background: -webkit-linear-gradient(transparent 50%, white 50%);
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "php";
+  -webkit-transform: rotate(-108deg) scale(1.1);
+      -ms-transform: rotate(-108deg) scale(1.1);
+          transform: rotate(-108deg) scale(1.1);
+}
+
+.foundation {
+  background: -webkit-linear-gradient(90deg, #13a7c7 50%, rgba(19, 167, 199, 0.3) 50%);
+  background: linear-gradient(0deg, #13a7c7 50%, rgba(19, 167, 199, 0.3) 50%);
+  -webkit-transform: rotate(162deg);
+      -ms-transform: rotate(162deg);
+          transform: rotate(162deg);
+}
+
+.foundation:before,
+.foundation:after {
+  color:rgba(24,24,24,0.5);
+}
+
+.foundation:before {
+  background: white content-box;
+  -webkit-transform: rotate(-162deg);
+      -ms-transform: rotate(-162deg);
+          transform: rotate(-162deg);
+  content: "90%";
+}
+
+.foundation:after {
+  background: -webkit-linear-gradient(transparent 50%, white 50%);
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "foundation";
+  -webkit-transform: rotate(-162deg) scale(1.1);
+      -ms-transform: rotate(-162deg) scale(1.1);
+          transform: rotate(-162deg) scale(1.1);
+}
+
+.bootstrap  {
+  background: -webkit-linear-gradient(90deg, #62478a 50%, rgba(98, 71, 138, 0.3) 50%);
+  background: linear-gradient(0deg, #62478a 50%, rgba(98, 71, 138, 0.3) 50%);
+  -webkit-transform: rotate(162deg);
+      -ms-transform: rotate(162deg);
+          transform: rotate(162deg);
+}
+
+.bootstrap:before,
+.bootstrap:after {
+  color:rgba(24,24,24,0.5);
+}
+
+.bootstrap:before {
+  background: white content-box;
+  -webkit-transform: rotate(-162deg);
+      -ms-transform: rotate(-162deg);
+          transform: rotate(-162deg);
+  content: "90%";
+}
+
+.bootstrap:after {
+  background: -webkit-linear-gradient(transparent 50%, white 50%);
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "bootstrap ";
+  -webkit-transform: rotate(-162deg) scale(1.1);
+      -ms-transform: rotate(-162deg) scale(1.1);
+          transform: rotate(-162deg) scale(1.1);
+}
+
+.MySql {
+  background: -webkit-linear-gradient(90deg, #577fa2 50%, rgba(87, 127, 162, 0.3) 50%);
+  background: linear-gradient(0deg, #577fa2 50%, rgba(87, 127, 162, 0.3) 50%);
+  -webkit-transform: rotate(111.6deg);
+      -ms-transform: rotate(111.6deg);
+          transform: rotate(111.6deg);
+}
+
+.MySql:before,
+.MySql:after {
+  color:rgba(24,24,24,0.5);
+}
+
+.MySql:before {
+  background: white content-box;
+  -webkit-transform: rotate(-111.6deg);
+      -ms-transform: rotate(-111.6deg);
+          transform: rotate(-111.6deg);
+  content: "62%";
+}
+
+.MySql:after {
+  background: -webkit-linear-gradient(transparent 50%, white 50%);
+  background: linear-gradient(transparent 50%, white 50%);
+  content: "MySql";
+  -webkit-transform: rotate(-111.6deg) scale(1.1);
+      -ms-transform: rotate(-111.6deg) scale(1.1);
+          transform: rotate(-111.6deg) scale(1.1);
+}
+h1#skill{
+  font-size: 48px;
+  margin:30px;
+  color: rgba(24,24,24,0.5);
+}
