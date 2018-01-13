@@ -747,6 +747,7 @@ nav ul li a {
     }
     .CONTSocial{
         margin-bottom: 60px;
+        text-align: center;
     }
     .socialnet .cajaC1, .socialnet .cajaC2, .socialnet .cajaC3, .socialnet .cajaC4, .socialnet .cajaC5, .socialnet .cajaC6 {
         height: 100px;
@@ -763,10 +764,6 @@ nav ul li a {
     }
     .ArticuloB5{
         margin-top: 10px;
-    }
-
-    .innovacion{
-        height: 450px;
     }
     .nombre{
         font-size: 34px;
