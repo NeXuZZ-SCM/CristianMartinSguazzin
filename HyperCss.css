@@ -708,7 +708,7 @@ nav ul li a {
 
 }
     .innovacion{
-        height: 520px;
+        height: 400px;
     }
 
 
@@ -774,3 +774,6 @@ nav ul li a {
 .PARinnov {
     font-size: 18px;
 }
+    .innovacion{
+        height: 480px;
+    }
