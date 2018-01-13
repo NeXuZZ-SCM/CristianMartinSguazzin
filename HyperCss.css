@@ -149,11 +149,12 @@ section{
     display: flex;
     flex-flow: row;
     align-items: center;
-    width: 100%;
-    padding-top: 50px;
     padding-bottom: 100px;
-    bottom:0;
-    margin: 0 auto;
+}
+.TITSoy{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }
 .FotoAutor{
     background-image: url(images/about.jpg);
