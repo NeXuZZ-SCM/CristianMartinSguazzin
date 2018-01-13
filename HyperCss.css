@@ -715,7 +715,9 @@ nav ul li a {
         height: 400px;
     }
 
-
+    .nombre{
+        font-size: 34px;
+    }
 
 
 
@@ -779,4 +781,7 @@ nav ul li a {
     }
     .CSmall{
         font-size: 18px;
+    }
+    .nombre{
+        font-size: 28px;
     }
