@@ -518,7 +518,8 @@ section{
     padding-left: 30px;
 }
 .ArticuloB5{
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-right: 10px;
 }
 .CSmall{
         font-size: 24px;
@@ -766,7 +767,7 @@ nav ul li a {
         margin-top: 10px;
     }
     .ArticuloB5{
-        margin-top: 10px;
+        margin-top: 0;
     }
     .nombre{
         font-size: 34px;
