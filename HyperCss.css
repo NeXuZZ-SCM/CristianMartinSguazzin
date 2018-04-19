@@ -120,6 +120,7 @@ article {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding-top: 15%;
     bottom: 100px;
     width: 100%;
