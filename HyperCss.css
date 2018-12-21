@@ -534,7 +534,7 @@ section {
   filter: grayscale(100%); }
 
 .pro15 {
-  background-image: url(images/fundationzurb.png);
+  background-image: url(images/fundationzurb.PNG);
   background-size: 160px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
