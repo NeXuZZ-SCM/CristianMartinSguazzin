@@ -15,7 +15,28 @@
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="HyperCss.css">
 
-
+    <script src="moveTo-min.js"></script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    const easeFunctions = {
+      easeInQuad: function (t, b, c, d) {
+        t /= d;
+        return c * t * t + b;
+      },
+      easeOutQuad: function (t, b, c, d) {
+        t /= d;
+        return -c * t* (t - 2) + b;
+      }
+    }
+    const moveTo = new MoveTo({
+      ease: 'easeInQuad'
+    }, easeFunctions);
+    const triggers = document.getElementsByClassName('js-trigger');
+    for (var i = 0; i < triggers.length; i++) {
+      moveTo.registerTrigger(triggers[i]);
+    }
+  });
+</script>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,10 +56,11 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a data-scroll href="#"><i class="fa fa-font" aria-hidden="true"></i> Inicio</a></li>
-                    <li><a data-scroll href="#HABI"><i class="fa fa-microchip" aria-hidden="true"></i> Skill</a></li>
-                    <li><a data-scroll href="otro.html"><i class="fa fa-code" aria-hidden="true"></i> Servicios</a></li>
-                    <li><a data-scroll href="#CONT"><i class="fa fa-phone" aria-hidden="true"></i> Contacto</a></li>
+                    <li><a href="#" class="js-trigger"><i class="fa fa-font" aria-hidden="true"></i> Inicio</a></li>
+                  <!--  <li><a data-scroll href="#HABI"><i class="fa fa-microchip" aria-hidden="true"></i> Skill</a></li> -->
+                  <li><a href="#HABI" class="js-trigger"><i class="fa fa-microchip" aria-hidden="true"></i> Skill</a></li>
+                    <li><a href="otro.html" class="js-trigger"><i class="fa fa-code" aria-hidden="true"></i> Servicios</a></li>
+                    <li><a href="#CONT" class="js-trigger"><i class="fa fa-phone" aria-hidden="true"></i> Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -204,11 +226,7 @@
         </footer>
 
     </section>
-    <script src="smooth-scroll.min.js"></script>
 
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
 
     <div class="ContactoTelefonico">
         <div class="ParteAContactoT">
@@ -243,6 +261,38 @@
             }
         })
     </script>
+
+
+
+    <script>
+    const trigger = document.getElementsByClassName('js-trigger');
+    moveTo.registerTrigger(trigger);
+    </script>
+<script>
+new MoveTo({
+    // The tolerance of the target to be scrolled
+    tolerance: 0,
+    // Duration of scrolling, in milliseconds
+    duration: 800,
+    // Ease function name
+    easing: 'easeOutQuart',
+    // run after scrolling complete
+    callback: noop
+})
+</script>
+
+
+
+
+
+
+<!--
+    <script src="smooth-scroll.min.js"></script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+-->
 
     <script src="stellar.js"></script>
     <script>
